@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodExpress | Food Delivery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            🍔 FoodExpress
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-actions">
+            <button id="darkModeBtn">🌙</button>
+
+            <div class="cart-icon" id="cartBtn">
+                🛒
+                <span id="cartCount">0</span>
+            </div>
+
+            <button class="hamburger" id="hamburger">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Delicious Food Delivered To Your Doorstep</h1>
+
+            <p>
+                Fresh meals from your favorite restaurants.
+                Fast delivery. Great taste.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="btn primary-btn">
+                    Order Now
+                </a>
+
+                <a href="#features" class="btn secondary-btn">
+                    Learn More
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D" alt="Food">
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories">
+        <h2>Popular Categories</h2>
+
+        <div class="category-container">
+            <div class="category-card">🍕 Pizza</div>
+            <div class="category-card">🍔 Burger</div>
+            <div class="category-card">🍜 Noodles</div>
+            <div class="category-card">🥗 Salad</div>
+            <div class="category-card">🍰 Dessert</div>
+            <div class="category-card">🥤 Drinks</div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu-section" id="menu">
+
+        <div class="menu-header">
+            <h2>Popular Dishes</h2>
+
+            <input type="text" id="searchInput" placeholder="Search food...">
+        </div>
+
+        <div class="food-grid" id="foodGrid">
+
+            <!-- CARD 1 -->
+            <div class="food-card" data-name="Burger">
+                <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnVyZ2VyfGVufDB8fDB8fHww"
+                    alt="Burger">
+
+                <div class="food-info">
+                    <h3>Classic Burger</h3>
+                    <p>Juicy grilled beef burger.</p>
+
+                    <div class="food-footer">
+                        <span>₹199</span>
+
+                        <button class="add-btn" data-id="1" data-name="Classic Burger" data-price="199">
+                            Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="food-card" data-name="Pizza">
+                <img src="https://media.istockphoto.com/id/184946701/photo/pizza.webp?a=1&b=1&s=612x612&w=0&k=20&c=Ikl5MrqVa6QPkphsEBBDIF6z5Kod7yTyD1AbDvpM3UE=" alt="Pizza">
+
+                <div class="food-info">
+                    <h3>Cheese Pizza</h3>
+                    <p>Loaded with mozzarella cheese.</p>
+
+                    <div class="food-footer">
+                        <span>₹299</span>
+
+                        <button class="add-btn" data-id="2" data-name="Cheese Pizza" data-price="299">
+                            Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="food-card" data-name="Pasta">
+                <img src="https://images.unsplash.com/photo-1616299908398-9af1134ad522?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y3JlYW15JTIwcGFzdGF8ZW58MHx8MHx8fDA%3D" alt="Pasta">
+
+                <div class="food-info">
+                    <h3>Creamy Pasta</h3>
+                    <p>Rich creamy Italian pasta.</p>
+
+                    <div class="food-footer">
+                        <span>₹249</span>
+
+                        <button class="add-btn" data-id="3" data-name="Creamy Pasta" data-price="249">
+                            Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+
+        <h2>Why Choose Us?</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <h3>⚡ Fast Delivery</h3>
+                <p>Get food delivered quickly.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🍽 Fresh Food</h3>
+                <p>Prepared with quality ingredients.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>💳 Easy Payments</h3>
+                <p>Simple and secure ordering experience.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews" id="reviews">
+
+        <h2>Customer Reviews</h2>
+
+        <div class="review-grid">
+
+            <div class="review-card">
+                <p>
+                    "Excellent service and tasty food!"
+                </p>
+
+                <h4>- Rahul</h4>
+            </div>
+
+            <div class="review-card">
+                <p>
+                    "Fast delivery and great prices."
+                </p>
+
+                <h4>- Priya</h4>
+            </div>
+
+            <div class="review-card">
+                <p>
+                    "Best food ordering experience."
+                </p>
+
+                <h4>- Aman</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+
+        <h2>Stay Updated</h2>
+
+        <form>
+            <input type="email" placeholder="Enter your email">
+
+            <button type="submit">
+                Subscribe
+            </button>
+        </form>
+
+    </section>
+
+    <!-- CART SIDEBAR -->
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+
+            <button id="closeCart">
+                ✖
+            </button>
+        </div>
+
+        <div id="cartItems">
+        </div>
+
+        <div class="cart-footer">
+
+            <h3>
+                Total: ₹
+                <span id="cartTotal">0</span>
+            </h3>
+
+            <button class="checkout-btn">
+                Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+
+        <h3>FoodExpress</h3>
+
+        <p>
+            Delivering happiness, one meal at a time.
+        </p>
+
+        <p>
+            © 2026 FoodExpress. All rights reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
